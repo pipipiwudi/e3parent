@@ -21,6 +21,7 @@
       <module name="e3managerinterface" target="1.8" />
       <module name="e3managerpojo" target="1.8" />
       <module name="e3managerservice" target="1.8" />
+      <module name="generator" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
