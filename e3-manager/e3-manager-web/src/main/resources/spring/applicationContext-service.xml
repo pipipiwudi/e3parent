@@ -10,4 +10,6 @@
 
     <!--扫描service-->
     <context:component-scan base-package="cn.e3mall.service"/>
+
+
 </beans>

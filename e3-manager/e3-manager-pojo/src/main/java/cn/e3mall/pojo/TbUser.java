@@ -17,20 +17,6 @@ public class TbUser {
 
     private Date updated;
 
-    public TbUser(Long id, String username, String password, String phone, String email, Date created, Date updated) {
-        this.id = id;
-        this.username = username;
-        this.password = password;
-        this.phone = phone;
-        this.email = email;
-        this.created = created;
-        this.updated = updated;
-    }
-
-    public TbUser() {
-        super();
-    }
-
     public Long getId() {
         return id;
     }

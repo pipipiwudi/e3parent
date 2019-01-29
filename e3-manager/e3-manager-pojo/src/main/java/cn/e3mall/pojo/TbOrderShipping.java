@@ -25,24 +25,6 @@ public class TbOrderShipping {
 
     private Date updated;
 
-    public TbOrderShipping(String orderId, String receiverName, String receiverPhone, String receiverMobile, String receiverState, String receiverCity, String receiverDistrict, String receiverAddress, String receiverZip, Date created, Date updated) {
-        this.orderId = orderId;
-        this.receiverName = receiverName;
-        this.receiverPhone = receiverPhone;
-        this.receiverMobile = receiverMobile;
-        this.receiverState = receiverState;
-        this.receiverCity = receiverCity;
-        this.receiverDistrict = receiverDistrict;
-        this.receiverAddress = receiverAddress;
-        this.receiverZip = receiverZip;
-        this.created = created;
-        this.updated = updated;
-    }
-
-    public TbOrderShipping() {
-        super();
-    }
-
     public String getOrderId() {
         return orderId;
     }

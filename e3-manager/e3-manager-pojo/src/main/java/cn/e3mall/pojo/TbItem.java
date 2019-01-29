@@ -25,24 +25,6 @@ public class TbItem {
 
     private Date updated;
 
-    public TbItem(Long id, String title, String sellPoint, Long price, Integer num, String barcode, String image, Long cid, Byte status, Date created, Date updated) {
-        this.id = id;
-        this.title = title;
-        this.sellPoint = sellPoint;
-        this.price = price;
-        this.num = num;
-        this.barcode = barcode;
-        this.image = image;
-        this.cid = cid;
-        this.status = status;
-        this.created = created;
-        this.updated = updated;
-    }
-
-    public TbItem() {
-        super();
-    }
-
     public Long getId() {
         return id;
     }

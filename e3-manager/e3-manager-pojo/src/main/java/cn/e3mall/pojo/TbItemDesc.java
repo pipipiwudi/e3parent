@@ -11,17 +11,6 @@ public class TbItemDesc {
 
     private String itemDesc;
 
-    public TbItemDesc(Long itemId, Date created, Date updated, String itemDesc) {
-        this.itemId = itemId;
-        this.created = created;
-        this.updated = updated;
-        this.itemDesc = itemDesc;
-    }
-
-    public TbItemDesc() {
-        super();
-    }
-
     public Long getItemId() {
         return itemId;
     }

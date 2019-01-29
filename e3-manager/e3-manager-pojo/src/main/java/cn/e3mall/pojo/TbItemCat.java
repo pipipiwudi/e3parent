@@ -19,21 +19,6 @@ public class TbItemCat {
 
     private Date updated;
 
-    public TbItemCat(Long id, Long parentId, String name, Integer status, Integer sortOrder, Boolean isParent, Date created, Date updated) {
-        this.id = id;
-        this.parentId = parentId;
-        this.name = name;
-        this.status = status;
-        this.sortOrder = sortOrder;
-        this.isParent = isParent;
-        this.created = created;
-        this.updated = updated;
-    }
-
-    public TbItemCat() {
-        super();
-    }
-
     public Long getId() {
         return id;
     }

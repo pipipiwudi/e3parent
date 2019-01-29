@@ -2,9 +2,8 @@ package cn.e3mall.mapper;
 
 import cn.e3mall.pojo.TbUser;
 import cn.e3mall.pojo.TbUserExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface TbUserMapper {
     int countByExample(TbUserExample example);

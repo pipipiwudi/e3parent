@@ -37,30 +37,6 @@ public class TbOrder {
 
     private Integer buyerRate;
 
-    public TbOrder(String orderId, String payment, Integer paymentType, String postFee, Integer status, Date createTime, Date updateTime, Date paymentTime, Date consignTime, Date endTime, Date closeTime, String shippingName, String shippingCode, Long userId, String buyerMessage, String buyerNick, Integer buyerRate) {
-        this.orderId = orderId;
-        this.payment = payment;
-        this.paymentType = paymentType;
-        this.postFee = postFee;
-        this.status = status;
-        this.createTime = createTime;
-        this.updateTime = updateTime;
-        this.paymentTime = paymentTime;
-        this.consignTime = consignTime;
-        this.endTime = endTime;
-        this.closeTime = closeTime;
-        this.shippingName = shippingName;
-        this.shippingCode = shippingCode;
-        this.userId = userId;
-        this.buyerMessage = buyerMessage;
-        this.buyerNick = buyerNick;
-        this.buyerRate = buyerRate;
-    }
-
-    public TbOrder() {
-        super();
-    }
-
     public String getOrderId() {
         return orderId;
     }

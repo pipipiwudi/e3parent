@@ -13,18 +13,6 @@ public class TbItemParam {
 
     private String paramData;
 
-    public TbItemParam(Long id, Long itemCatId, Date created, Date updated, String paramData) {
-        this.id = id;
-        this.itemCatId = itemCatId;
-        this.created = created;
-        this.updated = updated;
-        this.paramData = paramData;
-    }
-
-    public TbItemParam() {
-        super();
-    }
-
     public Long getId() {
         return id;
     }
