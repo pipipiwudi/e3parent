@@ -3,28 +3,36 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>e3-manager</artifactId>
+        <artifactId>e3-parent</artifactId>
         <groupId>cn.e3mall</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>e3-manager-service</artifactId>
+    <artifactId>e3-manager-web</artifactId>
     <packaging>war</packaging>
 
     <dependencies>
         <dependency>
             <groupId>cn.e3mall</groupId>
-            <artifactId>e3-manager-dao</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.e3mall</groupId>
             <artifactId>e3-manager-interface</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <!-- spring的依赖 -->
-        <!-- Spring -->
+        <!-- JSP相关 -->
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jsp-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
@@ -54,7 +62,7 @@
             <artifactId>spring-context-support</artifactId>
         </dependency>
 
-      <!-- dubbo相关 -->
+        <!-- dubbo相关 -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>
@@ -77,7 +85,6 @@
             <groupId>com.github.sgroschupf</groupId>
             <artifactId>zkclient</artifactId>
         </dependency>
-
 
     </dependencies>
 
