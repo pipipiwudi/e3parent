@@ -1,9 +1,12 @@
 package cn.e3mall.service.impl;
 
+import cn.e3mall.common.pojo.EasyUIDataGridResult;
 import cn.e3mall.mapper.TbItemMapper;
 import cn.e3mall.pojo.TbItem;
 import cn.e3mall.pojo.TbItemExample;
 import cn.e3mall.service.ItemService;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -37,6 +40,21 @@ public class ItemServiceImpl implements ItemService {
     public String getNameById(Long itemId) {
         String s = itemMapper.selectTest(itemId);
         return s;
+    }
+
+    @Override
+    public EasyUIDataGridResult getItemList(int page, int rows) {
+//        设置分页信息
+        PageHelper.startPage(page,rows);
+//        执行查询
+        TbItemExample tbItemExample = new TbItemExample();
+        List<TbItem> list = itemMapper.selectByExample(tbItemExample);
+        EasyUIDataGridResult result = new EasyUIDataGridResult();
+        result.setRows(list);
+
+        PageInfo<TbItem> pageInfo = new PageInfo<>(list);
+        result.setTotal((int) pageInfo.getTotal());
+        return result;
     }
 
 }
