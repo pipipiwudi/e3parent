@@ -20,12 +20,14 @@
 
     <!--配置注册中心-->
     <dubbo:registry protocol="zookeeper"
-                    address="192.168.56.128:2181"/>
+                    address="192.168.25.128:2181"/>
 
     <!--使用dubbo协议在20880端口暴露服务-->
     <dubbo:protocol name="dubbo" port="20880"/>
 
     <!--声明需要暴露的服务接口-->
     <dubbo:service interface="cn.e3mall.service.ItemService" ref="itemServiceImpl" timeout="300000"/>
+    <dubbo:service interface="cn.e3mall.service.ItemCatService" ref="itemCatServiceImpl" timeout="300000" />
+
 
 </beans>

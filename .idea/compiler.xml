@@ -12,6 +12,9 @@
         <module name="e3-manager-pojo" />
         <module name="e3-manager-service" />
         <module name="e3-manager-web" />
+        <module name="e3contentinterface" />
+        <module name="e3contentservice" />
+        <module name="e3portalweb" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

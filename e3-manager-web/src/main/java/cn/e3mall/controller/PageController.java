@@ -23,6 +23,15 @@ public class PageController {
         return page;
     }
 
+    @RequestMapping("rest/page/item-edit")
+    public  String editPage(){
+        return "item-edit";
+    }
 
+
+//    @RequestMapping("rest/item/query/item/desc/{itemId}")
+//    public String showDesc(@PathVariable Long itemId){
+//
+//    }
 
 }
