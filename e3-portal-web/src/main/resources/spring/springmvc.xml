@@ -9,7 +9,7 @@
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 
-    <context:property-placeholder location="classpath:conf/resource.properties"></context:property-placeholder>
+    <context:property-placeholder location="classpath:conf/resource.properties"/>
 
     <!--扫描包-->
     <context:component-scan base-package="cn.e3mall.portal.controller" />
@@ -30,5 +30,5 @@
     <dubbo:registry protocol="zookeeper"
                     address="192.168.25.128:2181"/>
     <!--<dubbo:reference interface="cn.e3mall.service.ItemService" id="itemService"/>-->
-
+    <dubbo:reference interface="cn.e3mall.content.service.ContentService" id="contentService" timeout="300000"/>
 </beans>
