@@ -18,6 +18,8 @@
         <module name="e3contentinterface" />
         <module name="e3contentservice" />
         <module name="e3portalweb" />
+        <module name="e3searchinterface" />
+        <module name="e3searchservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
