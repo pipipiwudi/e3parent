@@ -15,11 +15,22 @@
         <module name="e3-manager-service" />
         <module name="e3-manager-web" />
         <module name="e3-portal-web" />
+        <module name="e3cartinterface" />
+        <module name="e3cartservice" />
+        <module name="e3cartweb" />
         <module name="e3contentinterface" />
         <module name="e3contentservice" />
+        <module name="e3itemweb" />
+        <module name="e3orderinterface" />
+        <module name="e3orderservice" />
+        <module name="e3orderweb" />
         <module name="e3portalweb" />
         <module name="e3searchinterface" />
         <module name="e3searchservice" />
+        <module name="e3searchweb" />
+        <module name="e3ssointerface" />
+        <module name="e3ssoservice" />
+        <module name="e3ssoweb" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

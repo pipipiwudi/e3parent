@@ -11,7 +11,7 @@
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd">
 
     <!--扫描service-->
-    <context:component-scan base-package="cn.e3mall.search.service"/>
+    <context:component-scan base-package="cn.e3mall.search"/>
 
 <!--使用dubbo发布服务-->
 
@@ -29,4 +29,5 @@
     <!--<dubbo:service interface="cn.e3mall.service.ItemCatService" ref="itemCatServiceImpl" timeout="300000" />-->
 
     <dubbo:service interface="cn.e3mall.search.service.SearchItemService" ref="searchItemServiceImpl" timeout="300000"/>
+    <dubbo:service interface="cn.e3mall.search.service.SearchService" ref="searchServiceImpl" timeout="300000"/>
 </beans>
